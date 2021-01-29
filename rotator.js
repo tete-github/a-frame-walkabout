@@ -3,6 +3,8 @@
 AFRAME.registerComponent("rotator", {
   schema: {
     rig: { type: "selector" },
+    box: { type: "selector" },
+    box2: { type: "selector" }
   },
 
   init: function() {
@@ -14,6 +16,8 @@ AFRAME.registerComponent("rotator", {
     this.el.addEventListener("gripup", this.onPinchEnded);
 
     this.rig = this.data.rig;
+    this.box = this.data.box;
+    this.box2 = this.data.box2;
     this.camera = this.el.sceneEl.camera.el;
     this.axisY = new THREE.Vector3(0, 1, 0);
   },
