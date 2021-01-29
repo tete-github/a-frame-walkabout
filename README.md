@@ -6,3 +6,5 @@ when you reach the guardian boundary.
 
 Tested on the Oculus Quest 2.
 Rotate by bare hand pinching or pressing the "hold" button on a controller.
+
+Test it [here](https://www.timatimak.eu/experiments/a-frame-walkabout/index.html).
