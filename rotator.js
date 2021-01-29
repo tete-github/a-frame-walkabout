@@ -29,25 +29,25 @@ AFRAME.registerComponent("rotator", {
 
   onPinchStarted: function() {
     this.trigger = 1;
-    this.cameraAngle = this.camera.getAttribute("rotation").y;
+    this.oldCameraAngle = this.camera.getAttribute("rotation").y;
   },
 
   tick: function() {
     
     if (this.trigger == 1) {
       
-      var cameraAngle = THREE.Math.degToRad(
-      this.cameraAngle - this.camera.getAttribute("rotation").y );
+      var angleDifference = THREE.Math.degToRad(
+      this.oldCameraAngle - this.camera.getAttribute("rotation").y );
       
-      this.cameraAngle = this.camera.getAttribute("rotation").y;
+      this.oldCameraAngle = this.camera.getAttribute("rotation").y;
 
       var cameraPosition = new THREE.Vector3();
       cameraPosition.setFromMatrixPosition(this.camera.object3D.matrixWorld);
 
       this.rig.object3D.position.add( cameraPosition.negate() );
-      this.rig.object3D.position.applyAxisAngle( this.axisY, cameraAngle );
+      this.rig.object3D.position.applyAxisAngle( this.axisY, angleDifference );
       this.rig.object3D.position.add( cameraPosition.negate() );
-      this.rig.object3D.rotateOnAxis( this.axisY, cameraAngle );
+      this.rig.object3D.rotateOnAxis( this.axisY, angleDifference );
     }
   },
 
