@@ -44,27 +44,21 @@
       ></a-entity>
 
       <a-entity id="rig">
+        
         <a-camera></a-camera>
 
         <a-entity
-          oculus-touch-controls="hand: left"
-          rotator="rig: #rig; box: #box; box2: #box2"
-        ></a-entity>
-        <a-entity
-          oculus-touch-controls="hand: right"
-          rotator="rig: #rig; box: #box; box2: #box2"
-        ></a-entity>
-
-        <a-entity
-          id="left-hand"
+          oculus-touch-controls="hand: left;"
           hand-tracking-controls="hand: left; modelColor:#E9967A;"
           rotator="rig: #rig; box: #box; box2: #box2"
         ></a-entity>
 
         <a-entity
+          oculus-touch-controls="hand: right;"
           hand-tracking-controls="hand: right; modelColor:#E9967A;"
           rotator="rig: #rig; box: #box; box2: #box2"
         ></a-entity>
+      
       </a-entity>
     </a-scene>
   </body>
