@@ -5,7 +5,7 @@ Basically, you go back and forth from one end of your designated area to another
 when you reach the guardian boundary.
 
 Tested on the Oculus Quest 2.
-Rotate by bare hand pinching or pressing the "hold" button on a controller.
+Rotate by bare hand pinching or pressing the "grip" button on a controller.
 
 Test it [here](https://www.timatimak.eu/experiments/a-frame-walkabout/index.html).
 
