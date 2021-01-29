@@ -8,3 +8,5 @@ Tested on the Oculus Quest 2.
 Rotate by bare hand pinching or pressing the "hold" button on a controller.
 
 Test it [here](https://www.timatimak.eu/experiments/a-frame-walkabout/index.html).
+
+[my StackOverflow question](https://stackoverflow.com/questions/65705697/how-to-control-camera-rig-orientation-with-optically-tracked-pinch-in-a-frame)
